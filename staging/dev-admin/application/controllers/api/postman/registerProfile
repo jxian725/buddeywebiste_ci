@@ -1,0 +1,12 @@
+
+http://localhost/dev_buddey/api/guider/registerProfile
+{
+    "first_name":"Rock",
+    "last_name":"John",
+    "DOB":"1990-01-27",
+    "guider_id":46,
+    "about_me":"abour me fbxgbsf",
+    "email":"sivaraj619@yahoo.com",
+    "known_languages":[1,2],
+    "device_id":"drEDurlAS3I:APA91bHvkMlA6qb846GYx_VU8N3EJPMPYXSTpBXwn3C"
+}

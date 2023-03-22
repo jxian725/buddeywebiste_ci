@@ -1,0 +1,143 @@
+/*CUSTOM STYLES*/
+.navbar-brand img{
+	height: 62px;
+}
+.section_padding {
+    padding: 80px 0px;
+}
+header.main_menu.home_menu {
+    background: #2d86ff;
+}
+.navbar-nav a {
+	border-bottom: 3px solid transparent;
+}
+
+.navbar-nav a:hover {
+	border-bottom: 3px solid #2ECCFA;
+}
+
+.navbar-nav a.active {
+	border-bottom: 3px solid #2ECCFA;
+}
+.button {
+    background-color: #2d86ff;
+}
+.button-contactForm {
+    border-color: #2d85fb;
+}
+
+.banner_part:after {
+    background: transparent;
+}
+.banner_part:before {
+    background: transparent;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #2ECCFA;
+	font-family: "Oswald", sans-serif;
+}
+
+.main_menu .main-menu-item ul li a {
+	color: #fff !important;
+}
+.footer-area {
+	/*background-color: #A7ADBA;*/
+	padding: 80px 0px 20px;
+}
+.footer-area .single-footer-widget h4 {
+	margin-bottom: 23px;
+	font-weight: 700;
+	font-size: 24px;
+	color: #1ac6ff;
+}
+.footer-area .copyright_part_text p {
+	color: #1ac6ff;
+    font-size: 16px;
+}
+.our_latest_work .single_work_demo h5 {
+	color: #000;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 21px;
+}
+.section_tittle h2 {
+	font-size: 42px;
+	color: #2ECCFA;
+}
+.banner_text_iner h1{
+	font-size: 54px;
+}
+.banner_text_iner h4{
+	font-size: 25px;
+}
+.about_text h2{
+	text-transform: uppercase !important;
+}
+.about_text p{
+	font-size: 18px;
+}
+.single_work_demo p{
+	font-size: 18px;
+}
+.footer-area .single-footer-widget ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+.footer-vertical-l{
+	border-right: 2px solid #fff;
+}
+.footer-area .copyright_part_text a {
+    color: #fff;
+    font-size: 16px;
+}
+a:hover {
+    color: #4dc7fb !important;
+}
+.footer-area .copyright_part_text {
+    border-top: 1px solid #fff;
+    margin-top: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footer-area .footer_2 .social_icon a {
+    color: #fff;
+}
+.cta_part .cta_part_iner .cta_part_text p {
+    color: #2ECCFA;
+    text-transform: initial;
+    font-size: 16px;
+}
+.blog_part .single-home-blog .card ul li i {
+    color: #2ECCFA;
+}
+.blog_part .single-home-blog .card .card-body a {
+    color: #2ECCFA;
+    text-transform: capitalize;
+}
+.insta_share{
+	float: right;
+    margin-right: 0px !important;
+}
+
+/****************GIGS PAGE***************/
+.form_center_div{
+	margin: 0 auto;
+    width:70% 
+}
+@media (max-width: 576px){
+	.navbar-light .navbar-toggler {
+		background-color: #2ECCFA;
+	}
+	.navbar-collapse {
+	    background-color: #2ECCFA;
+	}
+	.banner_part {
+	    background-color: transparent;
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+	.navbar-light .navbar-toggler {
+		background-color: #2ECCFA;
+	}
+}
+
