@@ -1,0 +1,3 @@
+2018-05-30 06:46:02-FAIL|merchantcode:|paymentid:|refno:|amount:|ecurrency:|remark:|transid:|authcode:|estatus:|errdesc:|signature:|ccname:|ccno:|s_bankname:|s_country:
+2018-05-30 06:46:35-FAIL|merchantcode:|paymentid:|refno:|amount:|ecurrency:|remark:|transid:|authcode:|estatus:|errdesc:|signature:|ccname:|ccno:|s_bankname:|s_country:
+2018-05-30 06:46:47-FAIL|merchantcode:|paymentid:|refno:|amount:|ecurrency:|remark:|transid:|authcode:|estatus:|errdesc:|signature:|ccname:|ccno:|s_bankname:|s_country:

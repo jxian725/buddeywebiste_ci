@@ -1,0 +1,224 @@
+/* CSS Document */
+@charset "utf-8";
+*{margin:0px;padding:0px;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-style:normal;}
+a{text-decoration:none;outline:none!important;}
+img{border:0px;outline:none;display:block;}
+ul{list-style:none;margin:0px;}
+li{list-style-type:none;}
+.clr{clear:both;}
+body{overflow-x: hidden !important;font-family:'Roboto-Regular';-webkit-font-smoothing:subpixel-antialiased;-webkit-text-stroke:1px transparent;}
+	
+@font-face {
+  font-family: 'Roboto-Regular';
+src: url('../fonts/Roboto-Regular/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Roboto-Regular/Roboto-Regular.woff') format('woff'),
+url('../fonts/Roboto-Regular/Roboto-Regular.ttf')  format('truetype'),
+url('../fonts/Roboto-Regular/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.inner-wrapper {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mainform-format {
+	padding-bottom: 40px;
+    float: left;
+    width: 100%;
+    background: #ffffff url('../images/Donation-Form.jpg') no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.mainform-format > img {
+    margin: 50px auto 40px;
+    width: 50%;
+    max-width: 100%;
+	    display: inline-block;
+}
+.mainter-form h4 {
+    font-size: 26px;
+    margin: 0;
+}
+
+
+.myform-group {
+    width: 100%;
+    border-bottom: 1px solid #bebebe;
+    margin-bottom: 15px;
+    float: left;
+    position: relative;
+}
+
+.myform-group label {
+    color: #bebebe;
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-weight: 300;
+    padding-left: 40px;
+}
+
+.myform-group input {
+    border: 0;
+    width: 100%;
+    display: inline-block;
+    height: 36px;
+    font-size: 24px;
+    background: transparent;
+    padding-left: 40px;    outline: none !important;
+    position: relative;
+}
+
+.myform-group img {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 18px;
+}
+.importsocial {
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+.mainter-form {
+	margin-bottom: 40px;
+    width: 80%;
+	display: inline-block;
+    background: rgba(255,255,255,0.9);
+    margin: auto;
+    padding: 25px;
+    max-width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 0 6px 0px   rgba(0,0,0,0.2);
+}
+.checkmystatus {
+    width: 100%;
+    float: left;
+}
+.checkmystatus-listinf input {
+    display: none;
+}
+.checkmystatus-listinf input:checked ~ label {
+    background: #229fb3;
+    color: #fff;
+}
+.checkmystatus-listinf {
+    width: 18%;
+    margin: auto;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.checkmystatus-listinf label {
+    width: 100%;
+    border: 1px solid #229fb3;
+    height: 50px;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 23px;
+    padding: 8px 0;
+    cursor: pointer;
+}
+.importsocial img {
+    display: inline-block;
+    margin-right: 5px;
+    width: 60px;
+}
+
+.importsocial p {
+    text-align: left;
+}
+.myform-group-input input[type="submit"] {
+    width: 90%;
+    border: 0;
+    height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    /*border-radius: 60px;*/
+	outline: none !important;
+}
+.footer {
+    width: 100%;
+    float: left;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.footer p {
+    text-align: left;
+    font-size: 16px;
+    color: #aca9aa;
+}
+.myform-group-input input[type="submit"] {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1ebcb8+0,39b2e7+100 */
+/*background: #1ebcb8;*/ /* Old browsers */
+/*background: -moz-linear-gradient(left, #1ebcb8 0%, #39b2e7 100%);
+background: -webkit-linear-gradient(left, #1ebcb8 0%,#39b2e7 100%);
+background: linear-gradient(to right, #1ebcb8 0%,#39b2e7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ebcb8', endColorstr='#39b2e7',GradientType=1 );*/
+	
+}
+.myform-checkbox {
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+    text-align: left;
+    font-size: 20px;
+    color: #fbfbfb;
+}
+
+.myform-checkbox label {
+    font-weight: 300;
+    padding-left: 30px;
+    position: relative;
+    color: #777777;
+	cursor: pointer;
+}
+
+.myform-checkbox label::before {
+    width: 18px;
+    height: 18px;
+    background: transparent;
+    border: 1px solid #38b2e5;
+    position: absolute;
+    content: "";
+    left: 0;
+    border-radius: 4px;
+    top: 6px;
+}
+.myform-checkbox input {
+    display: none;
+}.footer a img {
+    max-width: 100%;
+    width: 100%;
+}
+.myform-checkbox input:checked + label::after {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    content: "\2713";
+    left: 2px;
+    border-radius: 4px;
+    top: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    vertical-align: middle;
+}
+
+.myform-checkbox input:checked + label::before {
+    background: #1fbcba;
+}
+
+.importsocial a {
+    color: #229fb3;
+    text-decoration: none;
+}
