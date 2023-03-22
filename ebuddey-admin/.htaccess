@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ http://18.216.41.0/buddey/buddey_admin/$1 [R=301,L]
+
+RewriteRule ^([a-z0-9_-]+)\.html$ index.php/page/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|asset|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
+Header set Access-Control-Allow-Origin *
+</IfModule>

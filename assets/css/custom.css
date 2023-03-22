@@ -1,0 +1,207 @@
+/*CUSTOM STYLES*/
+.navbar-brand img{
+	height: 62px;
+}
+.section_padding {
+    padding: 80px 0px;
+}
+header.main_menu.home_menu {
+    background: #2d86ff;
+}
+.navbar-nav a {
+	border-bottom: 3px solid transparent;
+}
+.breadcrumb:after {
+	background-color: transparent;
+}
+.home_banner h1{
+	color: #2d86ff;
+	font-size: 80px;
+	font-weight: 900;
+}
+.home_banner h4{
+	color: #2d86ff;
+	font-weight: 900;
+}
+#rudr_instafeed{
+  list-style:none  
+}
+#rudr_instafeed li{
+  float:left;
+  width:200px;
+  height:200px;
+  margin:10px
+}
+#rudr_instafeed li img{
+  max-width:100%;
+  max-height:100%;
+}
+.insta_user{
+    padding-left: 10px;
+}
+.insta_date{
+    color: #646464;
+}
+.new_insta_feed .card-body{
+    padding: 10px !important;
+}
+.new_insta_feed .single-home-blog {
+    border: 1px solid #ece9e9;
+}
+.new_insta_feed .team_member_social_icon {
+    padding: 5px;
+}
+.insta_text {
+    min-height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.breadcrumb {
+    background-image: url("../../images/banner_img.jpg");
+    height: 640px;
+}
+.navbar-nav a:hover {
+	border-bottom: 3px solid #2ECCFA;
+}
+.navbar-nav .dropdown-menu a:hover {
+	border-bottom: 3px solid #fff;
+}
+
+.navbar-nav a.active {
+	border-bottom: 3px solid #2ECCFA;
+}
+.button {
+    background-color: #2d86ff;
+}
+.button-contactForm {
+    border-color: #2d85fb;
+}
+
+.banner_part:after {
+    background: transparent;
+}
+.banner_part:before {
+    background: transparent;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #2ECCFA;
+	font-family: "Oswald", sans-serif;
+}
+
+.main_menu .main-menu-item ul li a {
+	color: #fff !important;
+}
+.footer-area {
+	/*background-color: #A7ADBA;*/
+	padding: 80px 0px 20px;
+}
+.footer-area .single-footer-widget h4 {
+	margin-bottom: 23px;
+	font-weight: 700;
+	font-size: 24px;
+	color: #1ac6ff;
+}
+.footer-area .copyright_part_text p {
+	color: #1ac6ff;
+    font-size: 16px;
+}
+.our_latest_work .single_work_demo h5 {
+	color: #000;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 21px;
+}
+.section_tittle h2 {
+	font-size: 42px;
+	color: #2ECCFA;
+}
+.banner_text_iner h1{
+	font-size: 54px;
+}
+.banner_text_iner h4{
+	font-size: 25px;
+}
+.about_text h2{
+	text-transform: uppercase !important;
+}
+.about_text p{
+	font-size: 18px;
+}
+.single_work_demo p{
+	font-size: 18px;
+}
+.footer-area .single-footer-widget ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+.footer-vertical-l{
+	border-right: 2px solid #fff;
+}
+.footer-area .copyright_part_text a {
+    color: #fff;
+    font-size: 16px;
+}
+a:hover {
+    color: #4dc7fb !important;
+}
+.footer-area .copyright_part_text {
+    border-top: 1px solid #fff;
+    margin-top: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footer-area .footer_2 .social_icon a {
+    color: #fff;
+}
+.cta_part .cta_part_iner .cta_part_text p {
+    color: #2ECCFA;
+    text-transform: initial;
+    font-size: 16px;
+}
+.blog_part .single-home-blog .card ul li i {
+    color: #2ECCFA;
+}
+.blog_part .single-home-blog .card .card-body a {
+    color: #2ECCFA;
+    text-transform: capitalize;
+}
+.insta_share{
+	float: right;
+    margin-right: 0px !important;
+}
+
+.cta_part .terms_section .content_center_div, .cta_part .privacy_section .content_center_div{
+	text-align: initial;
+}
+
+/****************GIGS PAGE***************/
+.form_center_div{
+	margin: 0 auto;
+    width:70% 
+}
+.dropdown .dropdown-menu .dropdown-item {
+    background-color: #51cdfa;
+}
+.dropdown .dropdown-menu {
+    background-color: #51cdfa;
+}
+@media (max-width: 576px){
+	.navbar-light .navbar-toggler {
+		background-color: #2ECCFA;
+	}
+	.navbar-collapse {
+	    background-color: #2ECCFA;
+	}
+	.banner_part {
+	    background-color: transparent;
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+	.navbar-light .navbar-toggler {
+		background-color: #2ECCFA;
+	}
+}
+
