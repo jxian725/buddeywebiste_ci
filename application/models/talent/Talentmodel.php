@@ -100,7 +100,7 @@ class Talentmodel extends CI_Model {
         }
     } 
     
-    public function talentSocialLinkInfo($talent_id){
+    public function talentSocialLinkInfo($talent_id=""){
         $this->db->select('*');
         $this->db->from('talent_social_links');
         $this->db->where('talent_id', $talent_id ); 
@@ -168,7 +168,7 @@ class Talentmodel extends CI_Model {
     }
 
     //Buskerspod tabel data
-    function get_datatables($where=false, $startDate=false, $endDate=false, $talent_id){
+    function get_datatables($where=false, $startDate=false, $endDate=false, $talent_id=''){
         $this->_get_datatables_query();
         if($startDate && $endDate){
             $this->db->where( 'DATE(events.start) >=', $startDate );
@@ -182,19 +182,19 @@ class Talentmodel extends CI_Model {
         $query = $this->db->get();
         return $query->result();
     }
-    function count_filtered($where=false, $startDate=false, $endDate=false, $talent_id){
+    function count_filtered($where=false, $startDate=false, $endDate=false, $talent_id=""){
         $this->_get_datatables_query();
         if($startDate && $endDate){
             $this->db->where( 'DATE(events.start) >=', $startDate );
             $this->db->where( 'DATE(events.end) <=', $endDate );
         }
-        $this->db->where('events.host_id', $talent_id );
+        $this->db->where('events.host_id', $talent_id="");
         //$this->db->where('events.status',3,FALSE);
         $this->db->where("(events.status=3 OR (events.status=5 AND events.paidStatus=1))");
         $query  = $this->db->get();
         return $query->num_rows();
     }
-    public function count_all($where=false, $startDate=false, $endDate=false, $talent_id){
+    public function count_all($where=false, $startDate=false, $endDate=false, $talent_id=""){
         $this->db->select('events.id');
         $this->db->from('events');
         $this->db->join('partner_list', 'partner_list.partner_id = events.partner_id', 'left');
@@ -257,7 +257,7 @@ class Talentmodel extends CI_Model {
         }
     }
     //Payment tabel data
-    function get_payment_datatables($where=false, $talent_id){
+    function get_payment_datatables($where=false, $talent_id=""){
         $this->db->query("SET sql_mode=(SELECT REPLACE(@@sql_mode, 'ONLY_FULL_GROUP_BY', ''));");
         $this->_get_payment_datatables_query();
         $this->db->where('events.host_id', $talent_id );
@@ -269,7 +269,7 @@ class Talentmodel extends CI_Model {
         $query = $this->db->get();
         return $query->result();
     }
-    function count_payment_filtered($where=false, $talent_id){
+    function count_payment_filtered($where=false, $talent_id=""){
         $this->db->query("SET sql_mode=(SELECT REPLACE(@@sql_mode, 'ONLY_FULL_GROUP_BY', ''));");
         $this->_get_payment_datatables_query();
         
@@ -280,7 +280,7 @@ class Talentmodel extends CI_Model {
         $query  = $this->db->get();
         return $query->num_rows();
     }
-    public function count_payment_all($where=false, $talent_id){
+    public function count_payment_all($where=false, $talent_id=""){
         $this->db->select('events.id');
         $this->db->from('events');
         $this->db->join('partner_list', 'partner_list.partner_id = events.partner_id', 'left');
@@ -334,7 +334,7 @@ class Talentmodel extends CI_Model {
     }
 
     //Donation tabel data
-    function get_donation_datatables($where=false, $talent_id){
+    function get_donation_datatables($where=false, $talent_id=""){
         $this->_get_donation_datatables_query();
         $this->db->where('guiderID', $talent_id );
         $this->db->where('pay_status',1);
@@ -344,7 +344,7 @@ class Talentmodel extends CI_Model {
         $query = $this->db->get();
         return $query->result();
     }
-    function count_donation_filtered($where=false, $talent_id){
+    function count_donation_filtered($where=false, $talent_id=""){
         $this->_get_donation_datatables_query();
         
         $this->db->where('guiderID', $talent_id );
@@ -353,7 +353,7 @@ class Talentmodel extends CI_Model {
         $query  = $this->db->get();
         return $query->num_rows();
     }
-    public function count_donation_all($where=false, $talent_id){
+    public function count_donation_all($where=false, $talent_id=""){
         $this->db->select('payment_id');
         $this->db->from('senangpay_transaction');
         
@@ -753,7 +753,7 @@ class Talentmodel extends CI_Model {
         $query = $this->db->get('talent_experience_list');
         return $query->row();
     }
-    public function checkblocktalent($partner_id, $talent_id){
+    public function checkblocktalent($partner_id, $talent_id=""){
         $this->db->select('*');
 		$this->db->where('talent_id', $talent_id );
 		$this->db->where('space_id', $partner_id );
@@ -804,11 +804,11 @@ class Talentmodel extends CI_Model {
        // $dbQuery = $db->select('*')->limit($limit)->get();
         //return $dbQuery->getResult();
    }
-   function talentInboxReadinfo($talent_id){
+   function talentInboxReadinfo($talent_id=""){
 		
         $this->db->select('COUNT(*) AS unreadmsg');
         $this->db->from('inbox');
-        $this->db->where('talent_id', $talent_id);
+        $this->db->where('talent_id', $talent_id="");
         $this->db->where('istalent_readstatus', 1); 
 		$this->db->where( 'is_admin_message', 1);
 		$query = $this->db->get();

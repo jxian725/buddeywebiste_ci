@@ -23,10 +23,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] 	= 'http://buddeytf.com/staging/';
-$config['admin_url']  	= 'http://buddeytf.com/staging/dev-admin/';
-$config['admin_dir_url']= 'http://buddeytf.com/staging/dev-admin/';
-$config['dir_url']      = 'http://buddeytf.com/staging/';
+$config['base_url'] 	= 'http://localhost/buddeywebiste_ci/staging/';
+$config['admin_url']  	= 'http://localhost/buddeywebiste_ci/staging/dev-admin/';
+$config['admin_dir_url']= 'http://localhost/buddeywebiste_ci/staging/dev-admin/';
+$config['dir_url']      = 'http://localhost/buddeywebiste_ci/staging/';
 $config['site_name']  	= 'BUDDEY APP';
 
 //Upload files path

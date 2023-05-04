@@ -24,11 +24,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //$config['base_url'] 	= 'http://www.buddeyapp.com/';
-$config['base_url'] 	= 'http://www.buddeytf.com/';
-$config['donate_url']   = 'http://www.buddeytf.com/senangpay/donate/';
-$config['admin_url']  	= 'http://www.buddeytf.com/ebuddey-admin/';
-$config['admin_dir_url']= 'http://www.buddeytf.com/ebuddey-admin/';
-$config['dir_url']      = 'http://www.buddeytf.com/';
+$config['base_url'] 	= 'http://localhost/buddeywebiste_ci/';
+$config['donate_url']   = 'http://localhost/buddeywebiste_ci/senangpay/donate/';
+$config['admin_url']  	= 'http://localhost/buddeywebiste_ci/ebuddey-admin/';
+$config['admin_dir_url']= 'http://localhost/buddeywebiste_ci/ebuddey-admin/';
+$config['dir_url']      = 'http://localhost/buddeywebiste_ci/';
+// $config['base_url'] 	= 'http://www.buddeytf.com/';
+// $config['donate_url']   = 'http://www.buddeytf.com/senangpay/donate/';
+// $config['admin_url']  	= 'http://www.buddeytf.com/ebuddey-admin/';
+// $config['admin_dir_url']= 'http://www.buddeytf.com/ebuddey-admin/';
+// $config['dir_url']      = 'http://www.buddeytf.com/';
 $config['site_name']  	= 'BUDDEY BNB';
 
 //Upload files path
