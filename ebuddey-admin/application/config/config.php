@@ -31,7 +31,16 @@ $config['hostportal_url'] = 'http://www.buddeytf.com/ebuddey-admin/hostPortal/';
 $config['donate_url']   = 'http://www.buddeytf.com/senangpay/donate/';
 $config['paynow_url']   = 'http://www.buddeytf.com/senangpay/paynow/';
 $config['faqimg_url'] 	= 'http://buddeytf.com/faq_img/';
-$config['site_name']  	= 'BUDDEY';
+
+// $config['front_url'] 	= 'http://localhost/';
+// $config['base_url'] 	= 'http://localhost/ebuddey-admin/';
+// $config['admin_url']  	= 'http://localhost/ebuddey-admin/';
+// $config['dir_url'] 	    = 'http://localhost/ebuddey-admin/';
+// $config['hostportal_url'] = 'http://localhost/ebuddey-admin/hostPortal/';
+// $config['donate_url']   = 'http://localhost/senangpay/donate/';
+// $config['paynow_url']   = 'http://localhost/senangpay/paynow/';
+// $config['faqimg_url'] 	= 'http://localhost/faq_img/';
+// $config['site_name']  	= 'BUDDEY';
 
 //Upload files path
 $config['upload_path_url']	= $config['dir_url'] .'uploads/';
